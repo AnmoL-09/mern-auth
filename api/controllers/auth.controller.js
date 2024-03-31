@@ -1,5 +1,5 @@
 import User from "../models/user.model.js";
-import bcryptjs from 'bcryptjs'
+import bcryptjs from 'bcryptjs';
 
 export const signup = async (req, res,next) => {
     const { username, email, password} = req.body;
@@ -12,5 +12,8 @@ export const signup = async (req, res,next) => {
         next(error);
     }
 
-
+    // res.set({
+    //     "Content-Type": "application/json",
+    //     "Access-Control-Allow-Origin": "*",
+    // });
 };
