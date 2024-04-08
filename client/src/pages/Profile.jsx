@@ -59,7 +59,7 @@ export default function Profile() {
           ) : imagePercent > 0 && imagePercent < 100 ? (
             <span className='text-red-700'>{`Uploading: ${imagePercent}%`}</span>)
             : imagePercent === 100 ? (
-              <span className='text-green-700'>Image Upload successfully</span>) : ''}
+              <span className='text-green-700'>Image Upload successfully</span>) : ('')}
 
           
         </p>
